@@ -300,7 +300,7 @@ export default function GalleryPage() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             className="relative max-w-6xl w-full aspect-video p-8"
-            onClick={(e) => e.stopPropagation()}
+            onClick={(e: MouseEvent) => e.stopPropagation()}
           >
             <Image
               src={
