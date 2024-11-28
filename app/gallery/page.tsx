@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { X } from "lucide-react";
 import Image from "next/image";
 
 // Mock data - Replace with your actual images
@@ -178,6 +179,13 @@ export default function GalleryPage() {
         </motion.div>
 
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-6 font-mono text-sm uppercase tracking-wider text-blue-400"
+          >
+            MORE THAN JUST MEMORIES
+          </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -291,7 +299,8 @@ export default function GalleryPage() {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
-            className="relative max-w-6xl w-full aspect-video"
+            className="relative max-w-6xl w-full aspect-video p-8"
+            onClick={(e) => e.stopPropagation()}
           >
             <Image
               src={
@@ -302,10 +311,13 @@ export default function GalleryPage() {
               className="object-contain"
             />
             <button
-              className="absolute top-4 right-4 text-white/60 hover:text-white"
-              onClick={() => setSelectedImage(null)}
+              className="absolute right-6 top-6 text-white/60 hover:text-white p-2 bg-black/50 rounded-full"
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedImage(null);
+              }}
             >
-              Close
+              <X size={24} />
             </button>
           </motion.div>
         )}

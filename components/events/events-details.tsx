@@ -15,22 +15,30 @@ export default function EventsDetails({
   const event = events.find((e) => e.id === eventId);
   if (!event) return null;
 
+  // Handle click outside
+  const handleBackdropClick = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
+      onClick={handleBackdropClick}
     >
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}
-        className="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-neutral-900 p-6 md:p-8"
+        className="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-neutral-900 p-6 pt-16 md:p-8 md:pt-16"
       >
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 text-white/60 hover:text-white"
+          className="absolute right-6 top-6 text-white/60 hover:text-white"
         >
           <X size={24} />
         </button>

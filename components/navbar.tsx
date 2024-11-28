@@ -7,8 +7,10 @@ import { usePathname } from "next/navigation";
 const links = [
   { href: "/", label: "Home" },
   { href: "/events", label: "Events" },
-  { href: "/gallery", label: "Gallery" },
   { href: "/team", label: "Team" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/sponsors", label: "Sponsors" },
+  { href: "/schedule", label: "Schedule" },
 ];
 
 const Navbar = () => {
