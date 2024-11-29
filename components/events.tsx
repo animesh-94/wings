@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import BentoTilt from "@/components/bento-tilt";
 import BentoCard from "@/components/bento-card";
 import { useRef } from "react";
+import Link from "next/link";
 
 export default function Events() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -90,12 +91,27 @@ export default function Events() {
               description="Learn from industry experts in hands-on sessions."
             />
           </BentoTilt>
+          {/* Competitions */}
+          <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1">
+            <BentoCard
+              src="/videos/feature-5.mp4"
+              title={
+                <span className="font-zentry">
+                  COM<span className="text-yellow-500">PETE</span>
+                </span>
+              }
+              description="Challenge yourself in high-stakes competitions."
+            />
+          </BentoTilt>
 
           {/* Coming Soon Tile */}
           <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1">
-            <div className="group relative flex size-full flex-col justify-between bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-5">
+            <Link
+              href="/events"
+              className="group relative flex size-full flex-col justify-between bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-5"
+            >
               <h2 className="font-zentry text-3xl font-bold text-white md:text-4xl">
-                More<span className="text-blue-500">Coming</span>Soon!
+                Explore All <span className="text-blue-500">Events</span>
               </h2>
               <motion.div
                 className="absolute bottom-5 right-5 text-white"
@@ -110,20 +126,7 @@ export default function Events() {
               >
                 →
               </motion.div>
-            </div>
-          </BentoTilt>
-
-          {/* Competitions */}
-          <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1">
-            <BentoCard
-              src="/videos/feature-5.mp4"
-              title={
-                <span className="font-zentry">
-                  COM<span className="text-yellow-500">PETE</span>
-                </span>
-              }
-              description="Challenge yourself in high-stakes competitions."
-            />
+            </Link>
           </BentoTilt>
         </div>
       </div>

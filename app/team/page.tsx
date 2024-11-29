@@ -467,24 +467,20 @@ const TeamPage = () => {
             WINGS <span className="text-blue-500">'25</span>
           </motion.h1>
         </div>
-        {/* Scroll Indicator */}
+
+        {/* Simple Scroll Indicator */}
         <motion.div
+          className="absolute bottom-12 left-1/2 -translate-x-1/2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          transition={{ delay: 1.1 }}
         >
-          <motion.div
-            animate={{
-              y: [0, 10, 0],
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-            className="w-6 h-6 border-r-2 border-b-2 border-white/50 rotate-45"
-          />
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-xs uppercase tracking-widest text-white/40">
+              Scroll
+            </span>
+            <div className="h-10 w-[2px] bg-gradient-to-b from-blue-500 to-transparent" />
+          </div>
         </motion.div>
       </section>
 

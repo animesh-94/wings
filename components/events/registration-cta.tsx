@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function RegistrationSection() {
   return (
@@ -21,20 +22,24 @@ export default function RegistrationSection() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="rounded-xl bg-blue-500 px-8 py-4 font-medium text-white hover:bg-blue-600"
-              >
-                Register Now
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="rounded-xl border border-white/10 px-8 py-4 font-medium text-white hover:bg-white/5"
-              >
-                View Schedule
-              </motion.button>
+              <Link href="#events">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="rounded-xl bg-blue-500 px-8 py-4 font-medium text-white hover:bg-blue-600"
+                >
+                  Register Now
+                </motion.button>
+              </Link>
+              <Link href="/schedule">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="rounded-xl border border-white/10 px-8 py-4 font-medium text-white hover:bg-white/5"
+                >
+                  View Schedule
+                </motion.button>
+              </Link>
             </div>
 
             <div className="mt-12 grid gap-8 sm:grid-cols-2 md:grid-cols-3">

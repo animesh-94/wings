@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 import { useRef } from "react";
 
 export default function EventsHero() {
@@ -32,7 +33,7 @@ export default function EventsHero() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-6 font-mono text-sm uppercase tracking-wider text-blue-400"
         >
-          March 14-16, 2025
+          January 21-23, 2025
         </motion.span>
 
         <motion.h1
@@ -61,39 +62,40 @@ export default function EventsHero() {
           transition={{ delay: 0.4 }}
           className="mt-12 flex gap-6"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="rounded-full bg-blue-500 px-8 py-3 font-medium text-white hover:bg-blue-600"
-          >
-            Explore Events
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="rounded-full border border-white/10 px-8 py-3 font-medium text-white hover:bg-white/5"
-          >
-            Download Schedule
-          </motion.button>
+          <Link href="#events">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="rounded-full bg-blue-500 px-8 py-3 font-medium text-white hover:bg-blue-600"
+            >
+              Explore Events
+            </motion.button>
+          </Link>
+          <Link href="#download">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="rounded-full border border-white/10 px-8 py-3 font-medium text-white hover:bg-white/5"
+            >
+              Download Schedule
+            </motion.button>
+          </Link>
         </motion.div>
       </motion.div>
 
-      {/* Scroll Indicator */}
+      {/* Simple Scroll Indicator */}
       <motion.div
+        className="absolute bottom-1 left-1/2 -translate-x-1/2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        transition={{ delay: 1.1 }}
       >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="h-6 w-6 rotate-45 border-b-2 border-r-2 border-white/50"
-        />
+        <div className="flex flex-col items-center gap-2">
+          <span className="text-xs uppercase tracking-widest text-white/40">
+            Scroll
+          </span>
+          <div className="h-10 w-[2px] bg-gradient-to-b from-blue-500 to-transparent" />
+        </div>
       </motion.div>
     </section>
   );

@@ -21,7 +21,7 @@ export default function EventsShowcase({
   );
 
   return (
-    <section className="relative py-16 sm:py-32">
+    <section id="events" className="relative py-16 sm:py-32">
       {/* Category Selection */}
       <div className="container mx-auto px-4">
         <div className="no-scrollbar mb-16 flex snap-x snap-mandatory overflow-x-auto sm:flex-wrap sm:justify-center gap-4 pb-4">

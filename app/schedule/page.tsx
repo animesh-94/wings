@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Clock, Calendar, MapPin, Download, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 // Define schedule data structure
 interface Event {
@@ -22,7 +23,7 @@ interface DaySchedule {
 // Schedule data
 const schedule: DaySchedule[] = [
   {
-    date: "March 14, 2025",
+    date: "January 21, 2025",
     title: "Day 1: Innovation Unleashed",
     description:
       "Opening ceremonies and technical events kick off the festival",
@@ -74,7 +75,7 @@ const schedule: DaySchedule[] = [
     ],
   },
   {
-    date: "March 15, 2025",
+    date: "January 22, 2025",
     title: "Day 2: Creative Convergence",
     description: "A blend of technical and cultural events",
     events: [
@@ -123,7 +124,7 @@ const schedule: DaySchedule[] = [
     ],
   },
   {
-    date: "March 16, 2025",
+    date: "January 23, 2025",
     title: "Day 3: Grand Finale",
     description: "Culmination of events and closing ceremony",
     events: [
@@ -332,7 +333,7 @@ const SchedulePage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="mb-6 font-mono text-sm uppercase tracking-wider text-blue-400"
           >
-            March 14-16, 2025
+            January 21-23, 2025
           </motion.span>
 
           <motion.h1
@@ -355,24 +356,19 @@ const SchedulePage = () => {
           </motion.p>
         </motion.div>
 
-        {/* Scroll Indicator */}
+        {/* Simple Scroll Indicator */}
         <motion.div
+          className="absolute bottom-12 left-1/2 -translate-x-1/2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          transition={{ delay: 1.1 }}
         >
-          <motion.div
-            animate={{
-              y: [0, 10, 0],
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-            className="h-6 w-6 rotate-45 border-b-2 border-r-2 border-white/50"
-          />
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-xs uppercase tracking-widest text-white/40">
+              Scroll
+            </span>
+            <div className="h-10 w-[2px] bg-gradient-to-b from-blue-500 to-transparent" />
+          </div>
         </motion.div>
       </motion.section>
 
@@ -510,7 +506,7 @@ const SchedulePage = () => {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 blur-xl"
+              className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/10 to-purple-500/10  blur-xl"
             />
 
             <div className="relative">
@@ -520,15 +516,17 @@ const SchedulePage = () => {
               <p className="mb-8 text-white/60">
                 Download the detailed schedule to your device
               </p>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-8 py-3 font-medium text-white"
-              >
-                <Download className="h-5 w-5" />
-                Download PDF
-                <ChevronRight className="h-5 w-5" />
-              </motion.button>
+              <Link href="#">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-8 py-3 font-medium text-white"
+                >
+                  <Download className="h-5 w-5" />
+                  Download PDF
+                  <ChevronRight className="h-5 w-5" />
+                </motion.button>
+              </Link>
             </div>
           </motion.div>
         </div>

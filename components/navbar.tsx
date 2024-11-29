@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const links = [
   { href: "/", label: "Home" },
@@ -11,6 +12,7 @@ const links = [
   { href: "/gallery", label: "Gallery" },
   { href: "/sponsors", label: "Sponsors" },
   { href: "/schedule", label: "Schedule" },
+  { href: "/register", label: "Register" },
 ];
 
 const Navbar = () => {
@@ -116,13 +118,19 @@ const Navbar = () => {
                 href="/"
                 className="font-zentry text-2xl font-bold text-white"
               >
-                Logo
+                <Image
+                  src="/logo-white.jpeg"
+                  alt="Logo"
+                  width={100}
+                  height={50}
+                  className="w-auto h-8"
+                />
               </Link>
             </motion.div>
 
             {/* Desktop Menu */}
             <div className="hidden md:block">
-              <div className="ml-10 flex items-center space-x-8">
+              <div className="ml-10 flex items-center space-x-6">
                 {links.map((link, idx) => (
                   <motion.div
                     key={idx}

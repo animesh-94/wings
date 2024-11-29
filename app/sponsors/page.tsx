@@ -295,22 +295,19 @@ const SponsorsPage = () => {
           </motion.div>
         </motion.div>
 
-        {/* Scroll Indicator */}
+        {/* Simple Scroll Indicator */}
         <motion.div
+          className="absolute bottom-1 left-1/2 -translate-x-1/2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          transition={{ delay: 1.1 }}
         >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-            className="h-6 w-6 rotate-45 border-b-2 border-r-2 border-white/50"
-          />
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-xs uppercase tracking-widest text-white/40">
+              Scroll
+            </span>
+            <div className="h-10 w-[2px] bg-gradient-to-b from-blue-500 to-transparent" />
+          </div>
         </motion.div>
       </motion.section>
 

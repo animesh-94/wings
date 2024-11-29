@@ -138,7 +138,10 @@ const Hero = ({
       {/* Main Content */}
       <motion.div
         className={`absolute inset-0 flex flex-col items-center justify-center ${contentClassName}`}
-        style={{ y: enableParallax ? y : 0, opacity: enableParallax ? opacity : 1 }}
+        style={{
+          y: enableParallax ? y : 0,
+          opacity: enableParallax ? opacity : 1,
+        }}
       >
         {/* Pre-title or Date */}
         {(preTitle || date) && (
@@ -161,14 +164,10 @@ const Hero = ({
         >
           <h1 className="hero-heading relative z-10 text-white">
             {title}
-            {titleAccent && <span className="text-blue-500">{titleAccent}</span>}
+            {titleAccent && (
+              <span className="text-blue-500">{titleAccent}</span>
+            )}
           </h1>
-          <div className="absolute inset-0 animate-pulse blur-2xl opacity-50">
-            <h1 className="hero-heading text-blue-500">
-              {title}
-              {titleAccent && <span className="text-white">{titleAccent}</span>}
-            </h1>
-          </div>
         </motion.div>
 
         {/* Animated Tags */}
