@@ -103,9 +103,6 @@ const Card = ({ card }: { card: CardType }) => {
       transition={{ duration: 0.6 }}
       className="group relative h-[400px] w-[300px] rounded-xl bg-gradient-to-br from-neutral-900/90 to-neutral-900/50 p-6 backdrop-blur-xl"
     >
-      {/* Hover Gradient */}
-      <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-
       <div className="relative flex h-full flex-col items-center">
         {/* Image Container */}
         <motion.div
@@ -120,8 +117,6 @@ const Card = ({ card }: { card: CardType }) => {
               className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
           </div>
-          {/* Glowing ring */}
-          <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-sm" />
         </motion.div>
 
         {/* Content */}
@@ -140,7 +135,7 @@ const Card = ({ card }: { card: CardType }) => {
         {/* Interactive elements */}
         <motion.button
           style={{ transform: "translateZ(40px)" }}
-          className="mt-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-2 text-xs font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          className="mt-auto rounded-full bg-blue-500 px-6 py-2 text-xs font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

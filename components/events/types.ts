@@ -23,7 +23,7 @@ export interface Event {
   category: CategoryId;
   featured?: boolean;
   highlights?: string[];
-  timeline?: string[];
+  timeline: string[];
   requirements?: string[];
 }
 

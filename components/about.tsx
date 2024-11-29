@@ -137,10 +137,11 @@ export default function About() {
           {/* YouTube iframe with custom parameters */}
           <iframe
             className="absolute left-0 top-0 size-full object-cover"
-            src={`https://www.youtube.com/embed/93EFs6KStWQ?autoplay=${shouldPlayVideo ? 1 : 0}&mute=1&loop=1`}
+            src={`https://www.youtube.com/embed/93EFs6KStWQ?autoplay=${shouldPlayVideo ? 1 : 0}&loop=1`}
             title="Background video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            loading="lazy"
             onLoad={() => setIsVideoLoaded(true)}
           />
         </motion.div>

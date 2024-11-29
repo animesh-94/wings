@@ -132,7 +132,7 @@ const Navbar = () => {
                     <Link
                       href={link.href}
                       className={`nav-hover-btn ${
-                        pathname === link.href ? "text-blue-500" : "text-white"
+                        pathname === link.href ? "!text-blue-500" : "text-white"
                       }`}
                     >
                       {link.label}

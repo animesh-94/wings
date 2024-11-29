@@ -138,7 +138,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <motion.div
-            className="flex justify-center gap-6"
+            className="flex flex-wrap justify-center gap-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.8 }}
