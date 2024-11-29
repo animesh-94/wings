@@ -105,7 +105,7 @@ const Hero = () => {
 
             <Link href="#about">
               <button className="rounded-full border border-white/10 px-8 py-4 text-sm font-medium text-white transition-colors hover:bg-white/5">
-                VISITOR PASS
+                LEARN MORE
               </button>
             </Link>
           </motion.div>
