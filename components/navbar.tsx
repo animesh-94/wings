@@ -119,10 +119,10 @@ const Navbar = () => {
                 className="font-zentry text-2xl font-bold text-white"
               >
                 <Image
-                  src="/logo-white.jpeg"
+                  src="/logo-blue-transparent.png"
                   alt="Logo"
                   width={100}
-                  height={50}
+                  height={100}
                   className="w-auto h-8"
                 />
               </Link>
@@ -201,7 +201,7 @@ const Navbar = () => {
                   <Link
                     href={link.href}
                     className={`nav-hover-btn text-3xl ${
-                      pathname === link.href ? "text-blue-500" : "text-white"
+                      pathname === link.href ? "!text-blue-500" : "text-white"
                     }`}
                     onClick={() => setIsOpen(false)}
                   >

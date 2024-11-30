@@ -71,13 +71,13 @@ export default function EventsHero() {
               Explore Events
             </motion.button>
           </Link>
-          <Link href="#download">
+          <Link href="/schedule">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="rounded-full border border-white/10 px-8 py-3 font-medium text-white hover:bg-white/5"
             >
-              Download Schedule
+              View Schedule
             </motion.button>
           </Link>
         </motion.div>

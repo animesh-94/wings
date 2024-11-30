@@ -8,6 +8,10 @@ import {
   MapPin,
   ArrowRight,
   Check,
+  Phone,
+  Mail,
+  CreditCard,
+  ScrollText,
 } from "lucide-react";
 import { events } from "./data";
 import Image from "next/image";
@@ -42,7 +46,7 @@ export default function EventsDetails({
         initial={{ scale: 0.95, opacity: 0, y: 20 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         exit={{ scale: 0.95, opacity: 0, y: 20 }}
-        className="relative max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-2xl bg-gradient-to-br from-white/[0.08] to-transparent backdrop-blur-md border border-white/10"
+        className="relative max-h-[90vh] w-full max-w-5xl overflow-hidden rounded-2xl bg-gradient-to-br from-white/[0.08] to-transparent backdrop-blur-md border border-white/10"
       >
         {/* Header Image Section */}
         <div className="relative h-64 w-full md:h-72">
@@ -79,77 +83,135 @@ export default function EventsDetails({
 
         {/* Content Section */}
         <div className="max-h-[calc(90vh-16rem)] overflow-y-auto p-6 md:p-8">
-          {/* Event Details */}
+          {/* Event Quick Details */}
           <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-4">
             <DetailCard icon={Calendar} label="Date" value={event.date} />
             <DetailCard icon={Trophy} label="Prize" value={event.prize} />
+            <DetailCard
+              icon={CreditCard}
+              label="Entry Fee"
+              value={event.fees || "Free"}
+            />
             <DetailCard icon={Clock} label="Duration" value="2 Hours" />
-            <DetailCard icon={MapPin} label="Venue" value="Main Hall" />
           </div>
 
-          {/* Description */}
-          <div className="mb-8">
-            <p className="text-lg leading-relaxed text-white/80">
-              {event.description}
-            </p>
-          </div>
+          {/* Two Column Layout for Main Content */}
+          <div className="grid gap-8 md:grid-cols-2">
+            {/* Left Column */}
+            <div className="flex flex-col justify-between">
+              {/* Description */}
+              <div className="mb-8">
+                <h3 className="mb-4 font-zentry text-xl font-bold text-white">
+                  About the Event
+                </h3>
+                <p className="text-lg leading-relaxed text-white/80">
+                  {event.description}
+                </p>
+              </div>
 
-          {/* Highlights Section */}
-          {event.highlights && (
-            <div className="mb-8">
-              <h3 className="mb-4 font-zentry text-xl font-bold text-white">
-                Event Highlights
-              </h3>
-              <div className="grid gap-4 sm:grid-cols-2">
-                {event.highlights.map((highlight, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    className="flex items-start gap-3 rounded-lg border border-white/10 bg-white/5 p-4"
-                  >
-                    <Check size={18} className="mt-0.5 text-blue-400" />
-                    <span className="text-white/80">{highlight}</span>
-                  </motion.div>
-                ))}
+              {/* Rules Section */}
+              <div className="mb-8">
+                <h3 className="mb-4 font-zentry text-xl font-bold text-white">
+                  Rules & Guidelines
+                </h3>
+                <div className="space-y-3">
+                  {event.rules?.map((rule, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      className="flex items-start gap-3 rounded-lg border border-white/10 bg-white/5 p-4"
+                    >
+                      <span className="text-blue-400 font-medium">
+                        {index + 1}.
+                      </span>
+                      <span className="text-white/80">{rule}</span>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </div>
-          )}
 
-          {/* Timeline Section */}
-          {event.timeline && (
-            <div className="mb-8">
-              <h3 className="mb-4 font-zentry text-xl font-bold text-white">
-                Event Timeline
-              </h3>
-              <div className="relative space-y-4">
-                {event.timeline.map((time, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    className="relative flex gap-4 pl-6"
-                  >
-                    <div className="absolute left-0 top-2 h-2 w-2 rounded-full bg-blue-500" />
-                    {index !== event.timeline.length - 1 && (
-                      <div className="absolute bottom-0 left-1 top-3 w-px bg-gradient-to-b from-blue-500/50 to-transparent" />
-                    )}
-                    <div className="flex-1 rounded-lg border border-white/10 bg-white/5 p-4">
-                      <span className="text-white/80">{time}</span>
+            {/* Right Column */}
+            <div>
+              {/* Venue Details */}
+              <div className="mb-8">
+                <h3 className="mb-4 font-zentry text-xl font-bold text-white">
+                  Venue Information
+                </h3>
+                <div className="rounded-lg border border-white/10 bg-white/5 p-4">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="mt-1 text-blue-400" />
+                    <div>
+                      <p className="font-medium text-white">{event.building}</p>
+                      <p className="text-white/60">{event.venue}</p>
                     </div>
-                  </motion.div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contact Information */}
+              <div className="mb-8">
+                <h3 className="mb-4 font-zentry text-xl font-bold text-white">
+                  Event Coordinators
+                </h3>
+                {event.coordinators?.map((coordinator, index) => (
+                  <div
+                    key={index}
+                    className="mb-4 rounded-lg border border-white/10 bg-white/5 p-4"
+                  >
+                    <p className="mb-2 font-medium text-white">
+                      {coordinator.name}
+                    </p>
+                    <div className="space-y-2 text-white/60">
+                      <div className="flex items-center gap-2">
+                        <Phone size={16} />
+                        <a href={`tel:${coordinator.phone}`}>
+                          {coordinator.phone}
+                        </a>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Mail size={16} />
+                        <a href={`mailto:${coordinator.email}`}>
+                          {coordinator.email}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 ))}
               </div>
+
+              {/* Payment QR Code */}
+              {event.fees && event.qrCode && (
+                <div className="mb-8">
+                  <h3 className="mb-4 font-zentry text-xl font-bold text-white">
+                    Payment Details
+                  </h3>
+                  <div className="rounded-lg border border-white/10 bg-white/5 p-4">
+                    <div className="mb-4 text-center">
+                      <p className="text-white/80">Scan to pay ₹{event.fees}</p>
+                    </div>
+                    <div className="flex justify-center">
+                      <Image
+                        src="/payment-qr.jpeg"
+                        alt="Payment QR Code"
+                        width={300}
+                        height={300}
+                        className="rounded-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
-          )}
+          </div>
 
           {/* Register Button */}
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 py-4 text-center font-medium text-white transition-all hover:brightness-110"
+            className="w-full rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 py-4 mb-4 text-center font-medium text-white transition-all hover:brightness-110"
           >
             <span className="flex items-center justify-center gap-2">
               Register Now

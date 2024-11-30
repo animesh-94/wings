@@ -71,21 +71,19 @@ const Hero = () => {
           </motion.div>
 
           {/* Tagline */}
-          <motion.div
-            className="mb-12 flex justify-center gap-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7 }}
-          >
+          <div className="mb-12 flex justify-center gap-6">
             {["IDEATE", "INNOVATE", "ILLUMINATE"].map((word, i) => (
-              <span
+              <motion.span
                 key={i}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 + 0.1 * (i + 1) }}
                 className="text-sm font-light tracking-[0.3em] text-white/70"
               >
                 {word}
-              </span>
+              </motion.span>
             ))}
-          </motion.div>
+          </div>
 
           {/* CTA Buttons */}
           <motion.div
@@ -94,7 +92,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
           >
-            <Link href="/events">
+            <Link href="/register">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 className="rounded-full bg-blue-500 px-8 py-4 text-sm font-medium text-white transition-colors hover:bg-blue-600"

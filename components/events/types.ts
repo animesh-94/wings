@@ -5,14 +5,13 @@ export interface Category {
   description: string;
 }
 
-// Valid category IDs
 export type CategoryId =
   | "technical"
   | "cultural"
   | "workshops"
   | "competitions";
 
-// Core event interface
+// Updated Event interface with new fields
 export interface Event {
   id: number;
   title: string;
@@ -23,10 +22,23 @@ export interface Event {
   category: CategoryId;
   featured?: boolean;
   highlights?: string[];
-  timeline: string[];
+  timeline?: string[];
   requirements?: string[];
+  // New fields
+  fees?: string;
+  building?: string;
+  venue: string;
+  rules?: string[];
+  coordinators?: Coordinator[];
+  qrCode?: string;
 }
 
+// New interface for coordinator
+export interface Coordinator {
+  name: string;
+  phone: string;
+  email: string;
+}
 // Props for various components
 export interface EventsGridProps {
   selectedCategory: CategoryId;

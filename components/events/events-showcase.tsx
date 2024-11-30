@@ -87,7 +87,7 @@ export default function EventsShowcase({
                 </div>
 
                 {/* Content */}
-                <div className="p-6">
+                <div className="flex flex-col p-6">
                   <div className="mb-4">
                     <h3 className="font-zentry text-xl font-bold text-white">
                       {event.title}
