@@ -184,6 +184,17 @@ body {
     }
 }
 
+.my-masonry-grid {
+    display: flex;
+    margin-left: -30px;
+    width: auto;
+}
+
+.my-masonry-grid_column {
+    padding-left: 30px;
+    background-clip: padding-box;
+}
+
 .indicator-line {
     @apply h-1 w-px rounded-full bg-white transition-all duration-200 ease-in-out;
 }
