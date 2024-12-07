@@ -20,7 +20,6 @@ export default function RegistrationSection() {
               Register now to participate in the biggest technical festival of
               the year. Early bird registrations get special benefits!
             </p>
-
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="#events">
                 <motion.button
@@ -40,36 +39,7 @@ export default function RegistrationSection() {
                   View Schedule
                 </motion.button>
               </Link>
-            </div>
-
-            <div className="mt-12 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-              {[
-                {
-                  title: "Early Bird Offer",
-                  description: "20% off on all workshop registrations",
-                },
-                {
-                  title: "Certificate",
-                  description: "Get verified digital certificates",
-                },
-                {
-                  title: "Goodies",
-                  description: "Exclusive merchandise for participants",
-                },
-              ].map((benefit, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="rounded-xl bg-white/5 p-6 text-center"
-                >
-                  <h3 className="mb-2 font-bold text-white">{benefit.title}</h3>
-                  <p className="text-sm text-white/70">{benefit.description}</p>
-                </motion.div>
-              ))}
-            </div>
+            </div>{" "}
           </div>
         </div>
       </motion.div>

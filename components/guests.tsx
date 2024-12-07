@@ -37,7 +37,10 @@ const Guests = () => {
           </h2>
         </motion.div>
 
+        <div className="text-center text-2xl text-white mb-12">Coming Soon</div>
+        {/* Temporarily Disabled
         <HorizontalScrollCarousel />
+        */}
       </div>
     </section>
   );

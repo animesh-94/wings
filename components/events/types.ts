@@ -24,8 +24,7 @@ export interface Event {
   highlights?: string[];
   timeline?: string[];
   requirements?: string[];
-  // New fields
-  fees?: string;
+  fees?: string | { [key: string]: string };
   building?: string;
   venue: string;
   rules?: string[];
@@ -37,7 +36,7 @@ export interface Event {
 export interface Coordinator {
   name: string;
   phone: string;
-  email: string;
+  email?: string;
 }
 // Props for various components
 export interface EventsGridProps {

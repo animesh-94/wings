@@ -34,12 +34,12 @@ export default function Events() {
             transition={{ delay: 0.3 }}
             className="mt-6 max-w-2xl text-lg text-white/70"
           >
-            Immerse yourself in a rich universe of events where innovation meets
-            excellence. Join us in shaping the future of technology.
+            From hackathons to robotics, explore our diverse range of events
+            designed to challenge your skills and ignite innovation.
           </motion.p>
         </div>
 
-        {/* Bento Grid - Keeping original structure */}
+        {/* Hackathon - Featured Event */}
         <BentoTilt className="relative mb-7 h-96 w-full overflow-hidden rounded-md border border-white/10 md:h-[65vh]">
           <BentoCard
             src="/videos/feature-1.mp4"
@@ -48,71 +48,75 @@ export default function Events() {
                 HACK<span className="text-blue-500">ATHON</span>
               </span>
             }
-            description="24-hour coding marathon to build innovative solutions for real-world problems."
+            description="24-hour coding challenge with ₹35,500 prize pool. Build innovative solutions with industry mentors."
           />
         </BentoTilt>
 
         <div className="grid h-[135vh] grid-cols-1 grid-rows-[repeat(5,1fr)] gap-7 md:grid-cols-2 md:grid-rows-3">
-          {/* Technical Events */}
+          {/* Robo Olympics */}
           <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1 md:row-span-2">
             <BentoCard
               src="/videos/feature-2.mp4"
               title={
                 <span className="font-zentry">
-                  TECH<span className="text-blue-500">FEST</span>
+                  ROBO<span className="text-blue-500">OLYMPICS</span>
                 </span>
               }
-              description="Showcase your technical prowess in a series of challenging events."
+              description="Compete in thrilling robotic challenges with a grand prize of ₹1,00,000"
             />
           </BentoTilt>
 
-          {/* Cultural Events */}
+          {/* E-Sports */}
           <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1">
             <BentoCard
               src="/videos/feature-3.mp4"
               title={
                 <span className="font-zentry">
-                  CUL<span className="text-purple-500">TURE</span>
+                  E-<span className="text-purple-500">SPORTS</span>
                 </span>
               }
-              description="Experience the fusion of art and technology."
+              description="Battle it out in thrilling online games with ₹45,000 in prizes"
             />
           </BentoTilt>
 
-          {/* Workshops */}
+          {/* Dronix */}
           <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1">
             <BentoCard
               src="/videos/feature-4.mp4"
               title={
                 <span className="font-zentry">
-                  WORK<span className="text-green-500">SHOPS</span>
+                  DRO<span className="text-green-500">NIX</span>
                 </span>
               }
-              description="Learn from industry experts in hands-on sessions."
+              description="Show off your drone piloting skills and win ₹45,000"
             />
           </BentoTilt>
-          {/* Competitions */}
+
+          {/* Auto Expo */}
           <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1">
             <BentoCard
               src="/videos/feature-5.mp4"
               title={
                 <span className="font-zentry">
-                  COM<span className="text-yellow-500">PETE</span>
+                  AUTO<span className="text-yellow-500">EXPO</span>
                 </span>
               }
-              description="Challenge yourself in high-stakes competitions."
+              description="Stunning showcase of innovative bikes and cars"
             />
           </BentoTilt>
 
-          {/* Coming Soon Tile */}
+          {/* View All Events Link */}
           <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1">
             <Link
               href="/events"
               className="group relative flex size-full flex-col justify-between bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-5"
             >
               <h2 className="font-zentry text-3xl font-bold text-white md:text-4xl">
-                Explore All <span className="text-blue-500">Events</span>
+                View All <span className="text-blue-500">Events</span>
               </h2>
+              <div className="text-sm text-white/60">
+                Explore all our exciting competitions and challenges
+              </div>
               <motion.div
                 className="absolute bottom-5 right-5 text-white"
                 animate={{

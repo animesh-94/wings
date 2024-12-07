@@ -8,82 +8,106 @@ import { Compass, Globe, Building2, Rocket } from "lucide-react";
 const sponsorTiers = [
   {
     name: "TITLE",
-    description: "Our prestigious title sponsors who make WINGS '25 possible",
+    description: "Our prestigious title sponsor",
     sponsors: [
       {
         id: 1,
-        name: "TechCorp International",
-        logo: "https://picsum.photos/seed/sponsor1/400/200",
-        website: "https://example.com",
-        description: "Global leader in technology innovation",
-      },
-      {
-        id: 2,
-        name: "Quantum Systems",
-        logo: "https://picsum.photos/seed/sponsor2/400/200",
-        website: "https://example.com",
-        description: "Pioneering quantum computing solutions",
+        name: "SBI",
+        logo: "/sponsors/sbi.png",
+        website: "https://www.sbi.co.in",
+        description: "State Bank of India - India's largest public sector bank",
       },
     ],
   },
   {
-    name: "PLATINUM",
-    description: "Key partners driving innovation",
+    name: "PRIME",
+    description: "Our prime sponsor driving innovation",
+    sponsors: [
+      {
+        id: 2,
+        name: "Ecosense Appliances Pvt Ltd",
+        logo: "/sponsors/ecosense-appliances.png",
+        website: "https://ecosenseappliances.com/",
+        description: "",
+      },
+    ],
+  },
+  {
+    name: "DRONIX EVENT",
+    description: "Sponsors supporting our drone technology showcase",
     sponsors: [
       {
         id: 3,
-        name: "Future Labs",
-        logo: "https://picsum.photos/seed/sponsor3/400/200",
-        website: "https://example.com",
-        description: "Research and development powerhouse",
+        name: "Laxmi Metal Pressing",
+        logo: "/sponsors/laxmi-metal-pressing.png",
+        website: "#",
+        description: "",
       },
       {
         id: 4,
-        name: "Digital Dynamics",
-        logo: "https://picsum.photos/seed/sponsor4/400/200",
-        website: "https://example.com",
-        description: "Digital transformation experts",
+        name: "Luminaz Safety Glass",
+        logo: "/sponsors/luminaz-safety-glass.png",
+        website: "#",
+        description: "",
       },
       {
         id: 5,
-        name: "Neural Networks Inc",
-        logo: "https://picsum.photos/seed/sponsor5/400/200",
-        website: "https://example.com",
-        description: "AI and machine learning solutions",
+        name: "Nahars",
+        logo: "/sponsors/nahars.png",
+        website: "#",
+        description: "",
       },
     ],
   },
   {
-    name: "GOLD",
-    description: "Valued supporters of technological advancement",
+    name: "TREASURE HUNT",
+    description: "Sponsor for our exciting treasure hunt event",
     sponsors: [
       {
         id: 6,
-        name: "Cyber Solutions",
-        logo: "https://picsum.photos/seed/sponsor6/400/200",
-        website: "https://example.com",
-        description: "Cybersecurity excellence",
+        name: "Alankar",
+        logo: "/sponsors/alankar.png",
+        website: "http://www.alankarengineeringcompany.com/",
+        description: "",
       },
+    ],
+  },
+  {
+    name: "CODING",
+    description: "Our technical learning partner",
+    sponsors: [
       {
         id: 7,
-        name: "Cloud Dynamics",
-        logo: "https://picsum.photos/seed/sponsor7/400/200",
-        website: "https://example.com",
-        description: "Cloud computing pioneers",
+        name: "GeeksforGeeks",
+        logo: "/sponsors/gfg.png",
+        website: "https://www.geeksforgeeks.org",
+        description: "Premier coding learning platform",
       },
+    ],
+  },
+  {
+    name: "AUTO EXPO",
+    description: "Automotive exhibition partner",
+    sponsors: [
       {
         id: 8,
-        name: "Tech Ventures",
-        logo: "https://picsum.photos/seed/sponsor8/400/200",
-        website: "https://example.com",
-        description: "Technology investment firm",
+        name: "Ratnapprabbha Motors",
+        logo: "/sponsors/ratnaprabha-motors.png",
+        website: "#",
+        description: "",
       },
+    ],
+  },
+  {
+    name: "OTHER PARTNERS",
+    description: "Supporting organizations",
+    sponsors: [
       {
         id: 9,
-        name: "Innovation Hub",
-        logo: "https://picsum.photos/seed/sponsor9/400/200",
-        website: "https://example.com",
-        description: "Startup accelerator and incubator",
+        name: "PMC",
+        logo: "/sponsors/pmc.png",
+        website: "#",
+        description: "Pathak Maths Classes",
       },
     ],
   },
@@ -111,17 +135,16 @@ const SponsorCard = ({
       transition={{ delay: index * 0.1 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+      className="group relative flex flex-col items-center text-center"
     >
       {/* Logo Container */}
-      <div className="relative mb-4 aspect-[2/1] overflow-hidden rounded-lg">
+      <div className="relative mb-4 aspect-[2/1] w-64 overflow-hidden rounded-lg">
         <Image
           src={sponsor.logo}
           alt={sponsor.name}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-110"
+          className="object-contain transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       </div>
 
       {/* Content */}
@@ -134,7 +157,7 @@ const SponsorCard = ({
           opacity: isHovered ? 1 : 0,
           y: isHovered ? 0 : 10,
         }}
-        className="absolute bottom-6 right-6 flex gap-3"
+        className="mt-4"
       >
         <motion.a
           href={sponsor.website}
@@ -158,7 +181,7 @@ const SponsorTier = ({ tier, index }: { tier: any; index: number }) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: index * 0.2 }}
-      className="py-16"
+      className="py-12"
     >
       <div className="container mx-auto px-4">
         {/* Tier Header */}
@@ -166,7 +189,7 @@ const SponsorTier = ({ tier, index }: { tier: any; index: number }) => {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="mb-4 font-zentry text-4xl font-bold text-white md:text-5xl"
+            className="mb-4 font-zentry text-3xl font-bold text-white md:text-4xl"
           >
             {tier.name} <span className="text-blue-500">SPONSORS</span>
           </motion.h2>
@@ -181,15 +204,7 @@ const SponsorTier = ({ tier, index }: { tier: any; index: number }) => {
         </div>
 
         {/* Sponsors Grid */}
-        <div
-          className={`grid gap-8 ${
-            tier.name === "TITLE"
-              ? "md:grid-cols-2"
-              : tier.name === "PLATINUM"
-                ? "md:grid-cols-3"
-                : "md:grid-cols-4"
-          }`}
-        >
+        <div className="flex flex-wrap justify-center gap-12">
           {tier.sponsors.map((sponsor: any, idx: number) => (
             <SponsorCard key={sponsor.id} sponsor={sponsor} index={idx} />
           ))}
@@ -267,7 +282,7 @@ const SponsorsPage = () => {
           </motion.p>
 
           {/* Stats */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
@@ -292,7 +307,7 @@ const SponsorsPage = () => {
                 <div className="text-sm text-white/60">{stat.label}</div>
               </div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
 
         {/* Simple Scroll Indicator */}
