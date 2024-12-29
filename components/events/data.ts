@@ -29,7 +29,7 @@ export const events: Event[] = [
       "Game On, Glory Awaits! Compete in BGMI and Valorant tournaments.",
     date: "January 23, 2025",
     prize: "₹45,000",
-    image: "https://picsum.photos/seed/esports/800/600",
+    image: "/events/valorant.webp",
     category: "competitions",
     fees: {
       "BGMI Duo": "₹100",
@@ -62,6 +62,7 @@ export const events: Event[] = [
       },
     ],
     qrCode: "/images/payment-qr/esports.png",
+    rulebook: "/rulebooks/E-SPORTS.pdf",
   },
   {
     id: 2,
@@ -69,7 +70,7 @@ export const events: Event[] = [
     description: "Game On, Glory Awaits! Show off your drone piloting skills.",
     date: "January 23, 2025",
     prize: "₹45,000",
-    image: "https://picsum.photos/seed/dronix/800/600",
+    image: "/events/dronix.webp",
     category: "technical",
     fees: "₹300 per team",
     building: "Aeronautics Block",
@@ -89,6 +90,8 @@ export const events: Event[] = [
       },
     ],
     qrCode: "/images/payment-qr/dronix.png",
+    rulebook: "/rulebooks/DRONIX.pdf",
+
   },
   {
     id: 3,
@@ -97,7 +100,7 @@ export const events: Event[] = [
       "Rise of the Machines: Let the Games Begin! A three-event robotics competition.",
     date: "January 23, 2025",
     prize: "More than ₹1,00,000",
-    image: "https://picsum.photos/seed/robo/800/600",
+    image: "/events/roborace.webp",
     category: "technical",
     fees: {
       "Robo Race": "₹300",
@@ -133,6 +136,7 @@ export const events: Event[] = [
       },
     ],
     qrCode: "/images/payment-qr/robo.png",
+    rulebook: "/rulebooks/ROBO OLYMPICS.pdf",
   },
   {
     id: 4,
@@ -165,6 +169,7 @@ export const events: Event[] = [
       },
     ],
     qrCode: "/images/payment-qr/bridge-mania.png",
+    rulebook: "/rulebooks/BRIDGEMANIA.pdf",
   },
   {
     id: 5,
@@ -173,7 +178,7 @@ export const events: Event[] = [
       "Unleash Ideas, Ignite Innovation: The Future of Technology Starts Here!",
     date: "January 23, 2025",
     prize: "₹22,500",
-    image: "https://picsum.photos/seed/innovates/800/600",
+    image: "/events/iif.webp",
     category: "technical",
     fees: "₹100 per team",
     building: "Innovation Block",
@@ -191,6 +196,8 @@ export const events: Event[] = [
       },
     ],
     qrCode: "/images/payment-qr/india-innovates.png",
+    rulebook: "/rulebooks/INDIA INNOVATES.pdf",
+
   },
   {
     id: 6,
@@ -198,7 +205,7 @@ export const events: Event[] = [
     description: "Hack For Future, Win the Challenge! 24-hour coding marathon.",
     date: "January 23, 2025",
     prize: "₹32,500",
-    image: "https://picsum.photos/seed/hackathon/800/600",
+    image: "/events/hackathon.webp",
     category: "technical",
     fees: "₹300 per team",
     building: "Computer Science Block",
@@ -216,6 +223,8 @@ export const events: Event[] = [
       },
     ],
     qrCode: "/images/payment-qr/hackathon.png",
+    rulebook: "/rulebooks/HACKATHON.pdf",
+
   },
   {
     id: 7,
@@ -224,7 +233,7 @@ export const events: Event[] = [
       "Code Like a Pro, Compete Like a Legend! Programming competition.",
     date: "January 23, 2025",
     prize: "₹22,500",
-    image: "https://picsum.photos/seed/code/800/600",
+    image: "/events/ode-to-code.webp",
     category: "technical",
     fees: "₹100 per participant",
     building: "Computer Science Block",
@@ -246,6 +255,8 @@ export const events: Event[] = [
       },
     ],
     qrCode: "/images/payment-qr/ode-to-code.png",
+    rulebook: "/rulebooks/ODE-TO-CODE.pdf",
+
   },
   {
     id: 8,
@@ -275,6 +286,8 @@ export const events: Event[] = [
       },
     ],
     qrCode: "/images/payment-qr/cadwar.png",
+    rulebook: "/rulebooks/CAD WAR.pdf",
+
   },
   {
     id: 9,

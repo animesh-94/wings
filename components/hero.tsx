@@ -50,7 +50,7 @@ const Hero = () => {
             transition={{ delay: 0.3 }}
             className="block font-mono text-sm uppercase tracking-widest text-blue-400 mb-6"
           >
-            January 21-23, 2025
+            January 22-24, 2025
           </motion.span>
 
           {/* Main Title */}

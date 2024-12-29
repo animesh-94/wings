@@ -22,10 +22,12 @@ interface TeamSection {
 interface TeamData {
   core: TeamSection;
   technical: TeamSection;
-  creative: TeamSection;
-  events: TeamSection;
+  management: TeamSection;
+  sponsorship: TeamSection;
   marketing: TeamSection;
+  registration: TeamSection;
   cultural: TeamSection;
+  prize: TeamSection;
   [key: string]: TeamSection; // For any additional sections that might be added
 }
 

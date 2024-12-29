@@ -31,11 +31,10 @@ export default function EventsShowcase({
               onClick={() => onCategoryChange(category.id)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`group relative flex shrink-0 snap-start items-center gap-3 rounded-full border px-6 py-3 transition-all duration-300 ${
-                selectedCategory === category.id
+              className={`group relative flex shrink-0 snap-start items-center gap-3 rounded-full border px-6 py-3 transition-all duration-300 ${selectedCategory === category.id
                   ? "border-blue-500 bg-blue-500/10 text-blue-400"
                   : "border-white/10 text-white/60 hover:border-white/20 hover:bg-white/5 hover:text-white"
-              }`}
+                }`}
             >
               <span className="text-2xl">{category.icon}</span>
               <span className="whitespace-nowrap font-medium">
@@ -110,14 +109,30 @@ export default function EventsShowcase({
                   </div>
 
                   {/* View Details Button */}
-                  <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 py-2.5 text-sm font-medium text-white transition-all hover:brightness-110"
-                  >
-                    View Details
-                    <ArrowRight size={16} />
-                  </motion.button>
+                  <div className="mt-6 flex flex-col sm:flex-row gap-2">
+                    <motion.button
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-blue-600 to-blue-500 py-2.5 px-4 text-sm font-medium text-white transition-all hover:brightness-110"
+                      onClick={() => onEventSelect(event.id)}
+                    >
+                      View Details
+                      <ArrowRight size={16} />
+                    </motion.button>
+                    {event.rulebook && (
+                      <motion.a
+                        href={event.rulebook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="flex w-full items-center justify-center gap-2 rounded-md border-2 border-gray-700 py-2.5 px-4 text-sm font-medium transition-all hover:bg-gray-700"
+                      >
+                        Rulebook
+                        <ArrowRight size={16} />
+                      </motion.a>
+                    )}
+                  </div>
                 </div>
 
                 {/* Hover Glow Effect */}

@@ -33,7 +33,7 @@ export default function EventsHero() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-6 font-mono text-sm uppercase tracking-wider text-blue-400"
         >
-          January 21-23, 2025
+          January 22-24, 2025
         </motion.span>
 
         <motion.h1

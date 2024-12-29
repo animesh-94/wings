@@ -42,7 +42,7 @@ export default function Events() {
         {/* Hackathon - Featured Event */}
         <BentoTilt className="relative mb-7 h-96 w-full overflow-hidden rounded-md border border-white/10 md:h-[65vh]">
           <BentoCard
-            src="/videos/feature-1.mp4"
+            src="/events/hero-hackathon.webp"
             title={
               <span className="font-zentry">
                 HACK<span className="text-blue-500">ATHON</span>
@@ -56,7 +56,7 @@ export default function Events() {
           {/* Robo Olympics */}
           <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1 md:row-span-2">
             <BentoCard
-              src="/videos/feature-2.mp4"
+              src="/events/roborace.webp"
               title={
                 <span className="font-zentry">
                   ROBO<span className="text-blue-500">OLYMPICS</span>
@@ -69,7 +69,7 @@ export default function Events() {
           {/* E-Sports */}
           <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1">
             <BentoCard
-              src="/videos/feature-3.mp4"
+              src="/events/hero-e-sports.jpg"
               title={
                 <span className="font-zentry">
                   E-<span className="text-purple-500">SPORTS</span>
@@ -82,7 +82,7 @@ export default function Events() {
           {/* Dronix */}
           <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1">
             <BentoCard
-              src="/videos/feature-4.mp4"
+              src="/events/dronix.webp"
               title={
                 <span className="font-zentry">
                   DRO<span className="text-green-500">NIX</span>
@@ -95,7 +95,7 @@ export default function Events() {
           {/* Auto Expo */}
           <BentoTilt className="row-span-1 overflow-hidden rounded-md border border-white/10 md:col-span-1">
             <BentoCard
-              src="/videos/feature-5.mp4"
+              src="/events/auto-expo.jpg"
               title={
                 <span className="font-zentry">
                   AUTO<span className="text-yellow-500">EXPO</span>

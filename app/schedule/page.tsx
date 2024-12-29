@@ -317,7 +317,7 @@ const SchedulePage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="mb-6 font-mono text-sm uppercase tracking-wider text-blue-400"
           >
-            January 21-23, 2025
+            January 22-24, 2025
           </motion.span>
 
           <motion.h1
@@ -371,11 +371,10 @@ const SchedulePage = () => {
                   onClick={() => setSelectedDay(index)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`group relative flex items-center gap-3 rounded-full px-6 py-3 transition-all ${
-                    selectedDay === index
+                  className={`group relative flex items-center gap-3 rounded-full px-6 py-3 transition-all ${selectedDay === index
                       ? "bg-blue-500/20 text-blue-400"
                       : "text-white/60 hover:text-white"
-                  }`}
+                    }`}
                 >
                   <Calendar className="h-5 w-5" />
                   <span className="font-medium">{day.date}</span>
@@ -417,20 +416,16 @@ const SchedulePage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className={`relative mb-8 ${
-                  index % 2 === 0 ? "sm:pr-8 sm:text-right" : "sm:pl-8"
-                } ${index % 2 === 0 ? "sm:ml-auto" : ""} sm:w-1/2`}
+                className={`relative mb-8 ${index % 2 === 0 ? "sm:pr-8 sm:text-right" : "sm:pl-8"
+                  } ${index % 2 === 0 ? "sm:ml-auto" : ""} sm:w-1/2`}
               >
                 {/* Timeline Node */}
                 <motion.div
                   whileHover={{ scale: 1.2 }}
-                  className={`absolute left-4 h-4 w-4 rounded-full ${
-                    categoryStyles[event.category].bg
-                  } ${categoryStyles[event.category].border} shadow-lg ${
-                    categoryStyles[event.category].glow
-                  } sm:left-1/2 ${
-                    index % 2 === 0 ? "sm:translate-x-4" : "sm:-translate-x-4"
-                  }`}
+                  className={`absolute left-4 h-4 w-4 rounded-full ${categoryStyles[event.category].bg
+                    } ${categoryStyles[event.category].border} shadow-lg ${categoryStyles[event.category].glow
+                    } sm:left-1/2 ${index % 2 === 0 ? "sm:translate-x-4" : "sm:-translate-x-4"
+                    }`}
                 />
 
                 {/* Event Card */}
@@ -459,9 +454,8 @@ const SchedulePage = () => {
                   {/* Category Tag */}
                   <div
                     className={`absolute top-4 right-4
-                     rounded-full px-3 py-1 text-xs ${
-                       categoryStyles[event.category].bg
-                     } ${categoryStyles[event.category].text}`}
+                     rounded-full px-3 py-1 text-xs ${categoryStyles[event.category].bg
+                      } ${categoryStyles[event.category].text}`}
                   >
                     {event.category}
                   </div>

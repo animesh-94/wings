@@ -18,46 +18,41 @@ const teamData: TeamData = {
     members: [
       {
         id: 1,
-        name: "Dr. Sarah Johnson",
+        name: "DR. N.R. BHASME",
         role: "Faculty Advisor",
-        image: "https://picsum.photos/seed/team1/400/400",
+        image: "/team/1. CORE TEAM/DR. N.R. BHASME.png",
         links: {
           linkedin: "#",
-          twitter: "#",
-          github: "#",
           email: "mailto:example@example.com",
         },
       },
       {
         id: 2,
-        name: "Alex Wright",
-        role: "Event Head",
-        image: "https://picsum.photos/seed/team2/400/400",
+        name: "AKASH SAWDE",
+        role: "Core Member",
+        image: "/team/1. CORE TEAM/AKASH SAWDE.jpeg",
         links: {
           linkedin: "#",
           github: "#",
-          email: "mailto:example@example.com",
         },
       },
       {
         id: 3,
-        name: "Emma Chen",
-        role: "Operations Head",
-        image: "https://picsum.photos/seed/team3/400/400",
+        name: "ANUJ ADHAV",
+        role: "Core Member",
+        image: "/team/1. CORE TEAM/ANUJ ADHAV.jpeg",
         links: {
           linkedin: "#",
-          twitter: "#",
-          email: "mailto:example@example.com",
+          github: "#",
         },
       },
       {
         id: 4,
-        name: "Raj Patel",
-        role: "Marketing Head",
-        image: "https://picsum.photos/seed/team4/400/400",
+        name: "SURAJKUMAR NAGE",
+        role: "Core Member",
+        image: "/team/1. CORE TEAM/SURAJKUMAR NAGE.jpg",
         links: {
           linkedin: "#",
-          twitter: "#",
           github: "#",
         },
       },
@@ -69,20 +64,19 @@ const teamData: TeamData = {
     members: [
       {
         id: 5,
-        name: "David Kim",
-        role: "Technical Lead",
-        image: "https://picsum.photos/seed/team5/400/400",
+        name: "ARNAV JOSHI",
+        role: "Technical Member",
+        image: "/team/2. TECHNICAL TEAM/ARNAV JOSHI.jpg",
         links: {
           linkedin: "#",
           github: "#",
-          email: "mailto:example@example.com",
         },
       },
       {
         id: 6,
-        name: "Maya Singh",
-        role: "Backend Developer",
-        image: "https://picsum.photos/seed/team6/400/400",
+        name: "TEJAS",
+        role: "Technical Member",
+        image: "/team/2. TECHNICAL TEAM/TEJAS.jpg",
         links: {
           linkedin: "#",
           github: "#",
@@ -90,85 +84,79 @@ const teamData: TeamData = {
       },
       {
         id: 7,
-        name: "Lucas Martinez",
-        role: "Frontend Developer",
-        image: "https://picsum.photos/seed/team7/400/400",
+        name: "VIRAJ THOTE",
+        role: "Technical Member",
+        image: "/team/2. TECHNICAL TEAM/VIRAJ THOTE.jpg",
         links: {
+          linkedin: "#",
           github: "#",
-          twitter: "#",
         },
       },
     ],
   },
-  creative: {
-    title: "Creative Team",
-    subtitle: "Designing the future",
+  management: {
+    title: "Management Team",
+    subtitle: "Organizing excellence",
     members: [
       {
         id: 8,
-        name: "Sofia Rodriguez",
-        role: "Design Lead",
-        image: "https://picsum.photos/seed/team8/400/400",
-        links: {
-          linkedin: "#",
-          twitter: "#",
-          github: "#",
-        },
-      },
-      {
-        id: 9,
-        name: "Tom Wilson",
-        role: "UI/UX Designer",
-        image: "https://picsum.photos/seed/team9/400/400",
-        links: {
-          linkedin: "#",
-          github: "#",
-        },
-      },
-      {
-        id: 10,
-        name: "Aisha Khan",
-        role: "Graphic Designer",
-        image: "https://picsum.photos/seed/team10/400/400",
-        links: {
-          linkedin: "#",
-          twitter: "#",
-        },
-      },
-    ],
-  },
-  events: {
-    title: "Events Team",
-    subtitle: "Crafting unforgettable experiences",
-    members: [
-      {
-        id: 11,
-        name: "Jack Thompson",
-        role: "Events Coordinator",
-        image: "https://picsum.photos/seed/team11/400/400",
+        name: "ANURAG PAWAR",
+        role: "Management Member",
+        image: "/team/3. MANAGEMENT TEAM/ANURAG PAWAR.jpeg",
         links: {
           linkedin: "#",
           email: "mailto:example@example.com",
         },
       },
       {
-        id: 12,
-        name: "Nina Patel",
-        role: "Logistics Manager",
-        image: "https://picsum.photos/seed/team12/400/400",
+        id: 9,
+        name: "PALLAVI GIRI",
+        role: "Management Member",
+        image: "/team/3. MANAGEMENT TEAM/PALLAVI GIRI.jpg",
         links: {
           linkedin: "#",
-          twitter: "#",
+        },
+      },
+      {
+        id: 10,
+        name: "RUSHIKESH MOTE",
+        role: "Management Member",
+        image: "/team/3. MANAGEMENT TEAM/RUSHIKESH MOTE.jpeg",
+        links: {
+          linkedin: "#",
+        },
+      },
+    ],
+  },
+  sponsorship: {
+    title: "Sponsorship Team",
+    subtitle: "Building partnerships",
+    members: [
+      {
+        id: 11,
+        name: "ARJUN MULE",
+        role: "Sponsorship Member",
+        image: "/team/4. SPONSORSHIP TEAM/ARJUN MULE.jpg",
+        links: {
+          linkedin: "#",
+        },
+      },
+      {
+        id: 12,
+        name: "KANAD DORLE",
+        role: "Sponsorship Member",
+        image: "/team/4. SPONSORSHIP TEAM/KANAD DORLE.jpeg",
+        links: {
+          linkedin: "#",
         },
       },
       {
         id: 13,
-        name: "Chris Lee",
-        role: "Workshop Coordinator",
-        image: "https://picsum.photos/seed/team13/400/400",
+        name: "RAJAT THORAT",
+        role: "Sponsorship Member",
+        image: "/team/4. SPONSORSHIP TEAM/RAJAT THORAT.jpg",
         links: {
           linkedin: "#",
-          github: "#",
         },
       },
     ],
@@ -179,33 +167,54 @@ const teamData: TeamData = {
     members: [
       {
         id: 14,
-        name: "Priya Sharma",
-        role: "Marketing Lead",
-        image: "https://picsum.photos/seed/team14/400/400",
+        name: "ABHISHEK JAYBHAY",
+        role: "Marketing Member",
+        image: "/team/5. MARKETING TEAM/ABHISHEK JAYBHAY.jpg",
         links: {
           linkedin: "#",
           twitter: "#",
-          email: "mailto:example@example.com",
         },
       },
       {
         id: 15,
-        name: "Mark Davis",
-        role: "Social Media Manager",
-        image: "https://picsum.photos/seed/team15/400/400",
+        name: "AKSHAY GAIKWAD",
+        role: "Marketing Member",
+        image: "/team/5. MARKETING TEAM/AKSHAY GAIKWAD.jpg",
         links: {
           linkedin: "#",
-          twitter: "#",
         },
       },
       {
         id: 16,
-        name: "Lisa Chen",
-        role: "Content Creator",
-        image: "https://picsum.photos/seed/team16/400/400",
+        name: "PRASNNA INGLE",
+        role: "Marketing Member",
+        image: "/team/5. MARKETING TEAM/PRASNNA INGLE.jpg",
         links: {
           linkedin: "#",
-          twitter: "#",
+        },
+      },
+    ],
+  },
+  registration: {
+    title: "Registration Team",
+    subtitle: "Managing participants",
+    members: [
+      {
+        id: 17,
+        name: "RASHMI MANDE",
+        role: "Registration Member",
+        image: "/team/6. REGISTRATION TEAM/RASHMI MANDE.jpg",
+        links: {
+          linkedin: "#",
+        },
+      },
+      {
+        id: 18,
+        name: "YOGESHWARI KANDE",
+        role: "Registration Member",
+        image: "/team/6. REGISTRATION TEAM/YOGESHWARI KANDE.jpg",
+        links: {
+          linkedin: "#",
         },
       },
     ],
@@ -215,34 +224,45 @@ const teamData: TeamData = {
     subtitle: "Adding life to technology",
     members: [
       {
-        id: 17,
-        name: "Arjun Mehta",
-        role: "Cultural Head",
-        image: "https://picsum.photos/seed/team17/400/400",
-        links: {
-          linkedin: "#",
-          twitter: "#",
-          email: "mailto:example@example.com",
-        },
-      },
-      {
-        id: 18,
-        name: "Sarah Williams",
-        role: "Performance Coordinator",
-        image: "https://picsum.photos/seed/team18/400/400",
-        links: {
-          linkedin: "#",
-          twitter: "#",
-        },
-      },
-      {
         id: 19,
-        name: "Kevin Zhang",
-        role: "Arts Coordinator",
-        image: "https://picsum.photos/seed/team19/400/400",
+        name: "PRATIK DAMDHAR",
+        role: "Cultural Member",
+        image: "/team/7. CULTURAL TEAM/PRATIK DAMDHAR.jpg",
         links: {
           linkedin: "#",
-          twitter: "#",
+        },
+      },
+      {
+        id: 20,
+        name: "YASHSHRI BALI",
+        role: "Cultural Member",
+        image: "/team/7. CULTURAL TEAM/YASHSHRI BALI.jpg",
+        links: {
+          linkedin: "#",
+        },
+      },
+    ],
+  },
+  prize: {
+    title: "Prize and Valedictory Team",
+    subtitle: "Celebrating achievements",
+    members: [
+      {
+        id: 21,
+        name: "SNEHAL JADHAV",
+        role: "Prize Team Member",
+        image: "/team/8. PRIZE AND VALIDECTORY/SNEHAL JADHAV.jpg",
+        links: {
+          linkedin: "#",
+        },
+      },
+      {
+        id: 22,
+        name: "TANMAY WAGH",
+        role: "Prize Team Member",
+        image: "/team/8. PRIZE AND VALIDECTORY/TANMAY WAGH.JPG",
+        links: {
+          linkedin: "#",
         },
       },
     ],
