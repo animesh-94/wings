@@ -169,7 +169,7 @@ const RegistrationForm = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="flex min-h-screen flex-col items-center justify-center"
+              className="flex min-h-screen w-full flex-col items-center justify-center px-4 sm:px-0"
             >
               {responseData && (
                 <VisitorCard
