@@ -15,7 +15,7 @@ A modern, dynamic website for Wings'25 - a technical festival at Government Engi
 - ✨ Custom loading animations
 - 📝 Registration system with Prisma & Supabase
 
-## Tech Stack
+## Tech Stack:
 
 - **Framework:** Next.js 15 (App Router)
 - **Language:** TypeScript
