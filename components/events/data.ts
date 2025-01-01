@@ -172,7 +172,7 @@ export const events: Event[] = [
     ],
     qrCode: "/images/payment-qr/bridge-mania.png",
     rulebook: "/rulebooks/BRIDGEMANIA.pdf",
-    link: "#TDB"
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSc-bwyt6YgbVh3ylQZHGqo5-QfS_1we_-tzfTudysfJT4bJRQ/viewform?usp=header"
   },
   {
     id: 5,
