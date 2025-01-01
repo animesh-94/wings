@@ -1,6 +1,6 @@
 # Wings'25 Website
 
-A modern, dynamic website for Wings'25 - a technical festival. Built with Next.js 15, TypeScript, and Tailwind CSS, featuring fluid animations and responsive design.
+A modern, dynamic website for Wings'25 - a technical festival at Government Engineering College Aurangabad. Built with Next.js 15, TypeScript, and Tailwind CSS, featuring fluid animations and responsive design.
 
 ## Features
 
@@ -56,7 +56,7 @@ wings-www/
    npm install
    ```
 
-3. Set up environment variables:
+3. Set up environment variables(SUPABASE):
    ```bash
    cp .env.example .env
    ```
@@ -77,22 +77,3 @@ wings-www/
 - **Team (`/team`)**: Team member showcase
 - **Sponsors (`/sponsors`)**: Sponsor showcase with tiers
 - **Register (`/register`)**: Registration portal
-
-## Styling
-
-The project uses Tailwind CSS with custom utilities and configurations:
-- Custom color schemes
-- Responsive design breakpoints
-- Animation utilities
-- Custom font configurations
-
-## Development
-
-- Follow TypeScript strict mode
-- Use ESLint for code quality
-- Maintain component-based architecture
-- Follow Next.js best practices
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
