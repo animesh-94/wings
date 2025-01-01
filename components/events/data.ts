@@ -91,7 +91,7 @@ export const events: Event[] = [
       },
     ],
     qrCode: "/images/payment-qr/dronix.png",
-    rulebook: "/rulebooks/DRONIX.pdf",
+    rulebook: "/rulebooks/dronix RB 2025.pdf",
     link: "https://forms.gle/FzwCD2je1oFaZp87A"
   },
   {
