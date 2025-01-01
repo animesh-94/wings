@@ -199,7 +199,7 @@ export default function EventsDetails({
                 )}
 
                 <motion.a
-                  href="https://forms.google.com/registration"
+                  href={event.link || "/register"}
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02 }}

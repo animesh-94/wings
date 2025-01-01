@@ -36,8 +36,8 @@ export const events: Event[] = [
       "BGMI Squad (4)": "₹200",
       "Valorant Squad (5)": "₹500",
     },
-    building: "Auditorium Block",
-    venue: "Gaming Arena",
+    building: "TBD",
+    venue: "",
     highlights: [
       "BGMI and Valorant tournaments",
       "Professional gaming setups",
@@ -63,6 +63,7 @@ export const events: Event[] = [
     ],
     qrCode: "/images/payment-qr/esports.png",
     rulebook: "/rulebooks/E-SPORTS.pdf",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdrcn16KEDHfyXoHJMTb0lIggWRiwe_MnRALpF-YDAKco-jxg/viewform?usp=dialog"
   },
   {
     id: 2,
@@ -73,8 +74,8 @@ export const events: Event[] = [
     image: "/events/dronix.webp",
     category: "technical",
     fees: "₹300 per team",
-    building: "Aeronautics Block",
-    venue: "Drone Field",
+    building: "TBD",
+    venue: "",
     highlights: ["20 teams limit", "Precision challenges", "Live audience"],
     timeline: ["9:00 AM - Registration & Start"],
     requirements: ["Drone specifications compliance", "Safety equipment"],
@@ -91,7 +92,7 @@ export const events: Event[] = [
     ],
     qrCode: "/images/payment-qr/dronix.png",
     rulebook: "/rulebooks/DRONIX.pdf",
-
+    link: "https://forms.gle/FzwCD2je1oFaZp87A"
   },
   {
     id: 3,
@@ -107,8 +108,8 @@ export const events: Event[] = [
       "Line Follower": "₹200",
       "Robo Soccer": "₹200",
     },
-    building: "Robotics Lab",
-    venue: "Arena 101",
+    building: "TBD",
+    venue: "",
     highlights: [
       "Three unique competitions",
       "45 teams limit",
@@ -137,6 +138,7 @@ export const events: Event[] = [
     ],
     qrCode: "/images/payment-qr/robo.png",
     rulebook: "/rulebooks/ROBO OLYMPICS.pdf",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScfHSRcZ_NmZlHs69XG-rPskBoI2u7whUwMzFt2sBZi1IPsJw/viewform?usp=dialog"
   },
   {
     id: 4,
@@ -145,11 +147,11 @@ export const events: Event[] = [
       "Engineering Fun, One Stick at a Time! Test your structural engineering skills.",
     date: "January 23, 2025",
     prize: "₹22,500",
-    image: "https://picsum.photos/seed/bridge/800/600",
+    image: "/events/bridge-mania.jpg",
     category: "technical",
     fees: "₹150 per team",
-    building: "Civil Engineering Block",
-    venue: "Structures Lab",
+    building: "TBD",
+    venue: "",
     highlights: [
       "60 teams limit",
       "Hands-on construction",
@@ -170,6 +172,7 @@ export const events: Event[] = [
     ],
     qrCode: "/images/payment-qr/bridge-mania.png",
     rulebook: "/rulebooks/BRIDGEMANIA.pdf",
+    link: "#TDB"
   },
   {
     id: 5,
@@ -181,8 +184,8 @@ export const events: Event[] = [
     image: "/events/iif.webp",
     category: "technical",
     fees: "₹100 per team",
-    building: "Innovation Block",
-    venue: "Exhibition Hall",
+    building: "TBD",
+    venue: "",
     highlights: ["30 teams limit", "Innovation showcase", "Expert judging"],
     timeline: ["9:00 AM - Registration & Start"],
     coordinators: [
@@ -197,7 +200,7 @@ export const events: Event[] = [
     ],
     qrCode: "/images/payment-qr/india-innovates.png",
     rulebook: "/rulebooks/INDIA INNOVATES.pdf",
-
+    link: "https://forms.gle/b2ZrMH5uSZDoNYPJA"
   },
   {
     id: 6,
@@ -208,8 +211,8 @@ export const events: Event[] = [
     image: "/events/hackathon.webp",
     category: "technical",
     fees: "₹300 per team",
-    building: "Computer Science Block",
-    venue: "Lab Complex",
+    building: "TBD",
+    venue: "",
     highlights: ["25 teams limit", "24-hour coding", "Mentorship available"],
     timeline: ["9:00 AM - Registration & Start"],
     coordinators: [
@@ -224,7 +227,7 @@ export const events: Event[] = [
     ],
     qrCode: "/images/payment-qr/hackathon.png",
     rulebook: "/rulebooks/HACKATHON.pdf",
-
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdR8Vtv3-MMB6jzZFplk-Sr0ShojdR7DGU5VHoHQZRtYCRElw/viewform?usp=dialog"
   },
   {
     id: 7,
@@ -236,8 +239,8 @@ export const events: Event[] = [
     image: "/events/ode-to-code.webp",
     category: "technical",
     fees: "₹100 per participant",
-    building: "Computer Science Block",
-    venue: "Programming Lab",
+    building: "TBD",
+    venue: "",
     highlights: [
       "300 participant limit",
       "Multiple rounds",
@@ -256,7 +259,7 @@ export const events: Event[] = [
     ],
     qrCode: "/images/payment-qr/ode-to-code.png",
     rulebook: "/rulebooks/ODE-TO-CODE.pdf",
-
+    link: "https://shorturl.at/EXf0N"
   },
   {
     id: 8,
@@ -264,11 +267,11 @@ export const events: Event[] = [
     description: "Design, Draft, Dominate: Unleash Your Creativity with CAD!",
     date: "January 23, 2025",
     prize: "₹22,500",
-    image: "https://picsum.photos/seed/cadwar/800/600",
+    image: "/events/cad-war.avif",
     category: "technical",
     fees: "₹100 per team",
-    building: "Mechanical Block",
-    venue: "CAD Lab",
+    building: "TBD",
+    venue: "",
     highlights: [
       "20 teams limit",
       "Design challenges",
@@ -287,7 +290,7 @@ export const events: Event[] = [
     ],
     qrCode: "/images/payment-qr/cadwar.png",
     rulebook: "/rulebooks/CAD WAR.pdf",
-
+    link: "https://forms.gle/Rx6FnKVRjBcF98vM7"
   },
   {
     id: 9,
@@ -295,10 +298,10 @@ export const events: Event[] = [
     description: "Drive the Future, Ride the Adventure!",
     date: "January 23, 2025",
     prize: "Exhibition Event",
-    image: "https://picsum.photos/seed/bikeandcar/800/600",
+    image: "/events/auto-expo.jpg",
     category: "competitions",
-    building: "Open Ground",
-    venue: "Exhibition Area",
+    building: "TBD",
+    venue: "",
     highlights: [
       "Custom vehicles showcase",
       "Live demonstrations",
@@ -308,7 +311,7 @@ export const events: Event[] = [
     coordinators: [
       {
         name: "Event Coordinator",
-        phone: "Contact Main Desk",
+        phone: "+919765988071",
       },
     ],
   },
@@ -318,10 +321,10 @@ export const events: Event[] = [
     description: "Experience the Magic of Live Music!",
     date: "January 23, 2025",
     prize: "NaN",
-    image: "https://picsum.photos/seed/concert/800/600",
+    image: "/events/concert.avif",
     category: "cultural",
-    building: "Auditorium",
-    venue: "Main Stage",
+    building: "TBD",
+    venue: "",
     timeline: ["6:00 PM - Concert Start", "8:00 PM - Concert End"],
     coordinators: [
       {

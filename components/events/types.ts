@@ -31,6 +31,7 @@ export interface Event {
   coordinators?: Coordinator[];
   qrCode?: string;
   rulebook?: string;
+  link?: string;
 }
 
 // New interface for coordinator

@@ -46,7 +46,7 @@ const RegistrationTabs = () => {
               your stay.
             </p>
             <a
-              href="[Your Google Form URL]"
+              href="https://docs.google.com/forms/d/1meZekmvdrx6jxCgiJBSv6hddNkXS9r8oPWXOV-Dnae4/edit"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-colors"
@@ -67,11 +67,10 @@ const RegistrationTabs = () => {
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              className={`px-6 py-3 rounded-lg text-sm font-medium transition-colors ${
-                activeTab === tab.id
+              className={`px-6 py-3 rounded-lg text-sm font-medium transition-colors ${activeTab === tab.id
                   ? "bg-blue-500 text-white"
                   : "text-gray-400 hover:text-white"
-              }`}
+                }`}
               onClick={() => setActiveTab(tab.id)}
             >
               {tab.label}
