@@ -50,7 +50,7 @@ const teamData: TeamData = {
         id: 4,
         name: "SURAJKUMAR NAGE",
         role: "Core Member",
-        image: "/team/1. CORE TEAM/SURAJKUMAR NAGE.jpg",
+        image: "/team/1. CORE TEAM/new2.jpg",
         links: {
           linkedin: "#",
           github: "#",
@@ -227,7 +227,7 @@ const teamData: TeamData = {
         id: 19,
         name: "PRATIK DAMDHAR",
         role: "Cultural Member",
-        image: "/team/7. CULTURAL TEAM/PRATIK DAMDHAR.jpg",
+        image: "/team/7. CULTURAL TEAM/new1.jpg",
         links: {
           linkedin: "#",
         },
