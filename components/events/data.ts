@@ -24,22 +24,56 @@ export const categories: Category[] = [
 export const events: Event[] = [
   {
     id: 1,
-    title: "E-Sports",
+    title: "BGMI",
     description:
       "Game On, Glory Awaits! Compete in BGMI and Valorant tournaments.",
     date: "January 23, 2025",
-    prize: "₹45,000",
+    prize: "₹22,500",
     image: "/events/valorant.webp",
     category: "competitions",
     fees: {
       "BGMI Duo": "₹100",
       "BGMI Squad (4)": "₹200",
-      "Valorant Squad (5)": "₹500",
     },
     building: "TBD",
     venue: "",
     highlights: [
       "BGMI and Valorant tournaments",
+      "20 teams limit",
+      "Multiple team size options",
+    ],
+    timeline: ["9:00 AM - Registration & Start"],
+    requirements: ["Team registration required", "Valid ID proof"],
+    rules: [
+      "Team size as per category",
+      "Game-specific rules apply",
+      "Fair play mandatory",
+    ],
+    coordinators: [
+      {
+        name: "Pratik Khandare",
+        phone: "9763183191",
+      },
+    ],
+    qrCode: "/images/payment-qr/esports.png",
+    rulebook: "/rulebooks/E-SPORTS.pdf",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdrcn16KEDHfyXoHJMTb0lIggWRiwe_MnRALpF-YDAKco-jxg/viewform?usp=dialog"
+  },
+  {
+    id: 0,
+    title: "Valorant",
+    description:
+      "Game On, Glory Awaits! Compete in BGMI and Valorant tournaments.",
+    date: "January 23, 2025",
+    prize: "₹22,500",
+    image: "/events/valorant.webp",
+    category: "competitions",
+    fees: {
+      "Valorant Squad (5)": "₹500",
+    },
+    building: "TBD",
+    venue: "",
+    highlights: [
       "Professional gaming setups",
       "20 teams limit",
       "Multiple team size options",
@@ -56,14 +90,10 @@ export const events: Event[] = [
         name: "Shantanu Karande",
         phone: "8624060301",
       },
-      {
-        name: "Pratik Khandare",
-        phone: "9763183191",
-      },
     ],
     qrCode: "/images/payment-qr/esports.png",
     rulebook: "/rulebooks/E-SPORTS.pdf",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSdrcn16KEDHfyXoHJMTb0lIggWRiwe_MnRALpF-YDAKco-jxg/viewform?usp=dialog"
+    link: "https://forms.gle/Tzpz5Buyv9hGtVym6"
   },
   {
     id: 2,
