@@ -29,7 +29,7 @@ export const events: Event[] = [
       "Game On, Glory Awaits! Compete in BGMI and Valorant tournaments.",
     date: "January 23, 2025",
     prize: "₹22,500",
-    image: "/events/valorant.webp",
+    image: "/events/bgmi.webp",
     category: "competitions",
     fees: {
       "BGMI Duo": "₹100",
