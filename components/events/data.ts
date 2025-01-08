@@ -268,12 +268,12 @@ export const events: Event[] = [
     prize: "₹22,500",
     image: "/events/ode-to-code.webp",
     category: "technical",
-    fees: "₹100 per participant",
-    building: "TBD",
+    fees: "Free Entry",
+    building: "Computer Science & Engineering Department",
     venue: "",
     highlights: [
       "300 participant limit",
-      "Multiple rounds",
+      "Single Round",
       "Individual competition",
     ],
     timeline: ["9:00 AM - Registration & Start"],
@@ -287,7 +287,6 @@ export const events: Event[] = [
         phone: "9529072277",
       },
     ],
-    qrCode: "/images/payment-qr/ode-to-code.png",
     rulebook: "/rulebooks/ODE-TO-CODE.pdf",
     link: "https://shorturl.at/EXf0N"
   },
