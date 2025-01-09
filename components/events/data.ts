@@ -339,8 +339,12 @@ export const events: Event[] = [
     timeline: ["9:00 AM - Exhibition Start"],
     coordinators: [
       {
-        name: "Event Coordinator",
-        phone: "+919765988071",
+        name: "Anirudh Panga",
+        phone: "9987073282",
+      },
+      {
+        name: "Ayush Patil",
+        phone: "8390949455"
       },
     ],
   },
