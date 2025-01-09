@@ -343,7 +343,7 @@ export const events: Event[] = [
         phone: "9987073282",
       },
       {
-        name: "Ayush Patil",
+        name: "Aayush Patil",
         phone: "8390949455"
       },
     ],
