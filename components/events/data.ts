@@ -287,7 +287,7 @@ export const events: Event[] = [
         phone: "9529072277",
       },
     ],
-    rulebook: "/rulebooks/OdeToCode.pdf(1).pdf",
+    rulebook: "/rulebooks/OdeToCode.pdf",
     link: "https://shorturl.at/EXf0N"
   },
   {
