@@ -23,7 +23,7 @@ interface DaySchedule {
 // Schedule data
 const schedule: DaySchedule[] = [
   {
-    date: "January 22, 2025",
+    date: "February 21, 2025",
     title: "Day 1: Setting the Stage",
     description: "Opening ceremonies and key talks to kick off the tech fest",
     events: [
@@ -44,7 +44,7 @@ const schedule: DaySchedule[] = [
     ],
   },
   {
-    date: "January 23, 2025",
+    date: "February 22, 2025",
     title: "Day 2: Tech Exploration",
     description: "A packed day of tech events and competitions",
     events: [
@@ -122,7 +122,7 @@ const schedule: DaySchedule[] = [
     ],
   },
   {
-    date: "January 24, 2025",
+    date: "February 23, 2025",
     title: "Day 3: Grand Finals and Farewell",
     description: "Final rounds and prize distribution to conclude the festival",
     events: [
@@ -317,7 +317,7 @@ const SchedulePage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="mb-6 font-mono text-sm uppercase tracking-wider text-blue-400"
           >
-            January 22-24, 2025
+            February 21-23, 2025
           </motion.span>
 
           <motion.h1
