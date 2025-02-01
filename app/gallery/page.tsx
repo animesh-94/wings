@@ -169,7 +169,7 @@ export default function GalleryPage() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             className="relative max-w-6xl w-full aspect-video p-8"
-            onClick={(e: MouseEvent) => e.stopPropagation()}
+            onClick={(e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation()}
           >
             {(() => {
               const item = galleryItems.find((i) => i.id === selectedItem);
